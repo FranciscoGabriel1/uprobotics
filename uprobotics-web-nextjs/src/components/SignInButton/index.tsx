@@ -8,7 +8,7 @@ export function SignInButtom() {
   return isUserLoggerIn ? (
     <SignInButton type="button" className={'signInButton'}>
       <FaGithub color="#04d361" />
-      Francisco
+      Professor
       <FiX color="#737380" className={'closeIcon'} />
     </SignInButton>
   ) : (
