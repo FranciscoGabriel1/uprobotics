@@ -12,6 +12,8 @@
     "next-images": "^1.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-icons": "^4.3.1",
+    "sass": "^1.42.1",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

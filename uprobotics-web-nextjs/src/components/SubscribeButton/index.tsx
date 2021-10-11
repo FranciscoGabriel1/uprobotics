@@ -1,11 +1,15 @@
-import styles from './styles.module.scss'
+// import styles from './styles.module.scss'
+
+import { SubscribeButtonCustom } from "./style";
 export function SubscribeButton(){
 
     return (
-        <button
+      <SubscribeButtonCustom
         type="button"
-        className={styles.subscribeButton}>
+        >
+
+
             Subscribe Now
-        </button>
+        </SubscribeButtonCustom>
     );
 }

@@ -1,22 +1,32 @@
 import React from 'react'
 import Head from 'next/head'
 
-import RocketseatLogo from '../assets/rocketseat.svg'
+import { SubscribeButton } from '../components/SubscribeButton';
 
-import { Container } from '../styles/pages/Home'
+ import styles from './home.module.scss';
+ import {Container, Hero} from '../styles/pages/Home'
 
-const Home: React.FC = () => {
+
+export default function Home() {
   return (
-    <Container>
-      <Head>
-        <title>Homepage</title>
-      </Head>
+    <>
+    <Head>
+      <title>Home | ig.news</title>
+    </Head>
 
-      <RocketseatLogo />
-      <h1>ReactJS Structure</h1>
-      <p>A ReactJS + Next.js structure made by Rocketseat.</p>
-    </Container>
+
+   <Container>
+      <Hero>
+        <span> 👏 Hey, welcome</span>
+        <h1>News about the <span> React</span> world.</h1>
+        <p>
+          Get access to all the publications
+          <span> for $9.90 month</span>
+        </p>
+        <SubscribeButton />
+        </Hero>
+      <img src="/images/avatar.svg" alt="Girl coding"/>
+      </Container>
+    </>
   )
 }
-
-export default Home
