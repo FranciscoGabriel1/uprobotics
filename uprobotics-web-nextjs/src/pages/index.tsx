@@ -17,11 +17,11 @@ export default function Home() {
 
    <Container>
       <Hero>
-        <span> 👏 Hey, welcome</span>
-        <h1>News about the <span> React</span> world.</h1>
+        <span> 👏 Olá, aprendiz</span>
+        <h1>Seja bem-vindo ao <span> Up</span> Robotics.</h1>
         <p>
-          Get access to all the publications
-          <span> for $9.90 month</span>
+          Programe e simule um robô com
+          <span> Webots</span>
         </p>
         <SubscribeButton />
         </Hero>

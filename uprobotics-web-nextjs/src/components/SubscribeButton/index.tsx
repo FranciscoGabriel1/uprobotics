@@ -9,7 +9,7 @@ export function SubscribeButton(){
         >
 
 
-            Subscribe Now
+            Veja como funciona
         </SubscribeButtonCustom>
     );
 }
