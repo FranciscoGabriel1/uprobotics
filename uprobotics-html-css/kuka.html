@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Blockly for arduino" />
+    <meta name="keywords" content="arduino, Unplugged robotics, blocklys, " />
+    <meta name="author" content="Francisco Gabriel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/robotics.css"
+      media="screen,projection"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Let browser know website is optimized for mobile-->
+    <title>Unplugged Robotics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--blocklys-->
+    <script src="blockly/blockly_compressed.js"></script>
+    <script src="blockly/blocks_compressed.js"></script>
+    <script src="blockly/javascript_compressed.js"></script>
+    <script src="blockly/msg/js/en.js"></script>
+    <script src="blockly/blocos_up.js"></script>
+    <script src="blockly/ui_bloco.js"></script>
+    <script src="blockly/code_bloco.js"></script>
+    <script src="blockly/interface_geral.js"></script>
+    <script src="blockly/codegen_geral.js"></script>
+    <script src="blockly/interface_teclas.js"></script>
+    <script src="blockly/code_teclas.js"></script>
+    <script src="custom_category_es6.js"></script>
+    <script src="toolbox_label_es6.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="toolbox_style.css" />
+
+    <script src="blockly/wo.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function confirmFunction() {
+        confirm("É possível que as alterações feitas não sejam salvas.");
+      }
+    </script>
+
+    <script>
+      let selectable = document.querySelector("[data-ctc]");
+
+      // deselect on mouseleave
+      selectable.addEventListener("mouseleave", () => {
+        document.getSelection().removeAllRanges();
+      });
+
+      selectable.addEventListener("click", ctc);
+      selectable.addEventListener("mouseover", ctc);
+
+      // select the element and copy
+      function ctc(e) {
+        let range = document.createRange();
+        range.selectNode(this);
+        window.getSelection().addRange(range);
+        if (e.type == "click") {
+          document.execCommand("copy"); // native copy function
+          flash();
+        }
+      }
+
+      // simple flash message
+      function flash() {
+        let body = document.querySelector("body");
+        body.classList.add("special");
+        setTimeout(() => {
+          body.classList.remove("special");
+        }, 2000);
+      }
+    </script>
+  </head>
+
+  <style>
+    .clearfix {
+      overflow: auto;
+    }
+    .navColor {
+      color: #fff;
+    }
+  </style>
+
+  <body style="background-color: #e5f0ff">
+    <nav class="blue">
+      <div class="nav-wrapper">
+        <a
+          href="#!"
+          onclick="confirmFunction()"
+          class="brand-logo"
+          style="margin-left: 3%; margin-top: 1%"
+          ><img alt="logo" src="img/logo-up.svg"
+        /></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#"><i class="material-icons">search</i></a>
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">view_module</i></a>
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">play_circle_outline</i></a>
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">language</i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <button onclick="ejecutar('codigogerado')">Copiar</button>  <BR><BR> -->
+
+    <div class="col s12" style="padding-top: 27px">
+      <div class="row">
+        <div class="col s8">
+          <div
+            id="blocklyDiv"
+            style="
+              float: left;
+              height: 600px;
+              width: 100%;
+              border-style: solid;
+              border-color: #e5e7e9;
+              border: none;
+              border-radius: 40px 10px;
+            "
+          ></div>
+        </div>
+        <div class="col s4">
+          <div
+            id="codigogerado"
+            style="
+              font-family: 'Courier New', Courier, monospace;
+              float: left;
+              height: 500px;
+              width: 100%;
+              padding-left: 2%;
+              background-color: #ffffff;
+              color: #ffffff;
+              border-style: solid;
+              border-color: #e5e7e9;
+              border: none;
+              border-radius: 40px;
+            "
+            class="clearfix"
+            data-ctc>oi</div>
+        </div>
+      </div>
+    </div>
+
+    <!--   <div id="swipe-2" class="col s12 " style="height: 500px; background-color: whitesmoke">Em construção!</div>
+    <div id="swipe-3" class="col s12 " style="height: 500px;background-color: rgb(255, 233, 233)">Em breve!</div>
+ -->
+
+    <xml id="toolbox" style="display: none">
+      <category name="Robôs" colour="270">
+        <!-- <block type="spot"></block>
+        <block type="e_puck"></block>
+        <block type="bb8"></block>
+        <block type="mavic"></block> -->
+        <block type="youbot"></block>
+        <!-- <block type="sojourney"></block> -->
+      </category>
+
+      <category name="Movimentos" colour="270">
+        <block type="youbot"></block>
+        <block type="tecla_dupla"></block>
+        <block type="tecla_simples"></block>
+        <block type="wait_seconds"></block>
+        <block type="gripper"></block>
+        <block type="base"></block>
+        <block type="car"></block>
+        <block type="arm_reset"></block>
+        <block type="manual_option"></block>
+
+        <block type="height_arm"></block>
+        <block type="orientation_arm"></block>
+      </category>
+      <category name="Controle" colour="270">
+        <block type="automatic_behavior"></block>
+        <block type="manual_behavior"></block>
+      </category>
+
+      <category name="Teclas" colour="270">
+        <block type="tc_pagedown"></block>
+        <block type="tc_pageup"></block>
+        <block type="tc_down"></block>
+        <block type="tc_up"></block>
+        <block type="tc_left"></block>
+        <block type="tc_right"></block>
+        <block type="tc_shift"></block>
+        <block type="tc_space"></block>
+      </category>
+    </xml>
+
+    <!-- 
+	<script>
+	function ejecutar(idelemento){
+     var aux = document.createElement("input");
+	aux.setAttribute("value", document.getElementById(idelemento).innerHTML);
+	document.body.appendChild(aux);
+	aux.select();
+	document.execCommand("copy");
+	document.body.removeChild(aux);
+	}
+	</script>
+	-->
+
+    <script>
+      /* TODO: Change toolbox XML ID if necessary. Can export toolbox XML from Workspace Factory. */
+      var toolbox = document.getElementById("toolbox");
+
+      var options = {
+        toolbox: toolbox,
+        collapse: false,
+        comments: false,
+        disable: false,
+        maxBlocks: Infinity,
+        trashcan: true,
+        horizontalLayout: false,
+        toolboxPosition: "start",
+        css: true,
+        media: "https://blockly-demo.appspot.com/static/media/",
+        rtl: false,
+        scrollbars: true,
+        sounds: true,
+        oneBasedIndex: true,
+        grid: {
+          spacing: 20,
+          length: 1,
+          colour: "#9575CD",
+          snap: false,
+        },
+        zoom: {
+          controls: true,
+          wheel: true,
+          startScale: 1,
+          maxScale: 3,
+          minScale: 0.3,
+          scaleSpeed: 1.2,
+        },
+      };
+
+      var mostrar = "nada aqui";
+      // var workspace = Blockly.inject('blocklyDiv', options, {
+      //     toolbox: document.getElementById('toolbox')
+      // });
+
+      /* Inject your workspace */
+      var workspace = Blockly.inject("blocklyDiv", options);
+      var workspaceBlocks = document.getElementById("workspaceBlocks");
+      //Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
+
+      function update(event) {
+        Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+        var code = new String(Blockly.JavaScript.workspaceToCode(workspace));
+        if (code != "") {
+          mostrar = code;
+          document.getElementById("codigogerado").innerHTML = mostrar;
+          cleanThanUp();
+        }
+      }
+
+      function cleanThanUp() {
+        var list = document.getElementById("im");
+        while (list.hasChildNodes()) {
+          list.removeChild(list.childNodes[0]);
+        }
+        updateGraph();
+      }
+
+      function updateGraph() {
+        if (mostrar != "nada aqui") {
+          var viz = new Viz();
+          viz
+            .renderSVGElement(mostrar)
+            .then(function (element) {
+              document.getElementById("im").appendChild(element);
+            })
+            .catch((error) => {
+              // Create a new Viz instance (@see Caveats page for more info)
+              viz = new Viz();
+
+              // Possibly display the error
+              console.error(error);
+            });
+        }
+      }
+      workspace.addChangeListener(update);
+    </script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="js/code.js"></script>-->
+    <!-- <script type="text/javascript" src="js/FileSaver.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script> -->
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+  </body>
+</html>

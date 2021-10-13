@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 29f310035fb0fbda83299db2feb9ee98
+needsRobotAncestor: 0
+baseType: PBRAppearance
+slotType: 
+parameters: 
+tags: hidden
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: 
+info: plastic\smetal\sappearance

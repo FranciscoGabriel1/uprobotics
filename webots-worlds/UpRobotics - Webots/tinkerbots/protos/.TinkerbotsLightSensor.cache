@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: bb99b7134a2406f1bd6a8e0cc75b3026
+needsRobotAncestor: 1
+baseType: Slot
+slotType: tinkerbots+
+parameters: translation,rotation,name,upSlot,upASlot,upBSlot,upCSlot,upDSlot,leftSlot,leftASlot,leftBSlot,leftCSlot,leftDSlot,rightSlot,rightASlot,rightBSlot,rightCSlot,rightDSlot,backSlot,backASlot,backBSlot,backCSlot,backDSlot
+tags: 
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: 
+info: Tinkerbots\slight\ssensor\sblock.\nhttps://www.tinkerbots.com

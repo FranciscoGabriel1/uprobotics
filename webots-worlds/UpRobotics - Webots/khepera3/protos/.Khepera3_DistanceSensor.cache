@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: ca085ddd5a4698d0c4e9efd0e55875dd
+needsRobotAncestor: 1
+baseType: DistanceSensor
+slotType: 
+parameters: translation,rotation,name
+tags: 
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: 
+info: Model\sof\san\sinfra-red\ssensor\sof\sthe\sKhepera\sIII\srobot.\nThe\slookup\stable\swas\scalibrated\susing\sdata\scollected\sfrom\sa\sreal\sKhepera\sIII.\nMeasures\swere\scarried\sout\sbetween\s0\sand\s44.5\scm\susing\sa\swhite\sobstacle\sand\sa\sblack\sground.\nElectronic\spart:\sVishay\sTCRT5000

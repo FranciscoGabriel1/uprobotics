@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: cb4bcf2a258c129a28104cb3a648cc6e
+needsRobotAncestor: 1
+baseType: Transform
+slotType: 
+parameters: translation,rotation
+tags: 
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: 
+info: Ground\ssensors\sextension\sfor\sthe\se-puck\srobot.\n\nIt\sincludes\sthree\sinfra-red\sproximity\ssensors\npointing\sdown\sto\sthe\sground\sin\sfront\sof\sthe\srobot.

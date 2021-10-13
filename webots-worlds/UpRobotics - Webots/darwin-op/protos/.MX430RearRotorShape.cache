@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: b21a1f07241236cb2315071438082981
+needsRobotAncestor: 0
+baseType: Group
+slotType: 
+parameters: screwA,screwB,screwC,screwD,screwE,screwF,screwG,screwH
+tags: hidden
+license: 
+licenseUrl: 
+documentationUrl: 
+info: 

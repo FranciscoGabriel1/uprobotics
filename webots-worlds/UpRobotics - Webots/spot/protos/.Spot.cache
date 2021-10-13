@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: b406ece33fd5839b52af99b75b7e298b
+needsRobotAncestor: 1
+baseType: Robot
+slotType: 
+parameters: translation,rotation,name,model,controller,controllerArgs,customData,supervisor,synchronization,selfCollision,frontExtension,middleExtension,rearExtension
+tags: 
+license:  Creative Commons 4.0
+licenseUrl:  https://creativecommons.org/licenses/by/4.0
+documentationUrl: https://www.cyberbotics.com/doc/guide/spot
+info: The\s"Spot"\sis\sa\sdog\srobot\sdeveloped\sby\sBoston\sDynamics.\nOriginal\smodel\sby\sGreg\sMcKechnie.

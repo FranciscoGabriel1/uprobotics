@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 0d98878741808928e1885ad9ee4895d1
+needsRobotAncestor: 0
+baseType: Robot
+slotType: 
+parameters: translation,rotation,name,controller,controllerArgs,customData,supervisor,synchronization,selfCollision,upSlot,upASlot,upBSlot,upCSlot,upDSlot,downSlot,downASlot,downBSlot,downCSlot,downDSlot,leftSlot,leftASlot,leftBSlot,leftCSlot,leftDSlot,rightSlot,rightASlot,rightBSlot,rightCSlot,rightDSlot,backSlot,backASlot,backBSlot,backCSlot,backDSlot,extensionSlot
+tags: 
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: 
+info: Tinkerbots\sbase\sblock.\nhttps://www.tinkerbots.com
