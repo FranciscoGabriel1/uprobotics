@@ -13,8 +13,8 @@ export default function Create() {
 
       <Container>
         <Hero>
-          <h1>Create</h1>
-          <SubscribeButton />
+          <h1>Aqui vai ser carregado a workstation</h1>
+          <SubscribeButton label="Vamos programar? " route="https://workstation-ecru.vercel.app/#!"/>
         </Hero>
       </Container>
     </>

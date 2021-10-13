@@ -2,12 +2,12 @@
 
 import { SubscribeButtonCustom } from './style'
 import  Link  from 'next/link'
-export function SubscribeButton() {
+export function SubscribeButton({label="Veja como funciona", route="/tutorial"}) {
   return (
-    <Link href="/tutorial">
+    <Link href={route}>
       <a>
         <SubscribeButtonCustom type="button">
-            Veja como funciona
+            {label}
         </SubscribeButtonCustom>
       </a>
     </Link>
