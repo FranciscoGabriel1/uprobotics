@@ -5,7 +5,7 @@ export const SubscribeButtonCustom = styled.button`
   height: 4rem;
   border: 0;
   border-radius: 2rem;
-  background: var(--yellow-500);
+  background: var(--cyan-500);
   color: var(--gray-900);
   font-size: 1.25rem;
   font-weight: bold;

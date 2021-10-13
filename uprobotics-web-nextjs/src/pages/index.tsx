@@ -25,7 +25,7 @@ export default function Home() {
         </p>
         <SubscribeButton />
         </Hero>
-      <img src="/images/avatar1.svg" alt="Girl coding"/>
+      <img src="/images/avatar.svg" alt="Girl coding"/>
       </Container>
     </>
   )

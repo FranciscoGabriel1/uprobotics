@@ -8,7 +8,7 @@ export default function Tutorial() {
   return (
     <>
       <Head>
-        <title>Tutorial</title>
+        <title>Create</title>
       </Head>
 
       <Container>

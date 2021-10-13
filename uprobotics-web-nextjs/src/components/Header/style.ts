@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 5rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--gray-800);
 `
 export const HeaderContent = styled.div`
   max-width: 1120px;
@@ -47,7 +47,7 @@ export const HeaderContent = styled.div`
         position: absolute;
         bottom: 0;
         left: 0;
-        background: var(--yellow-500);
+        background: var(--cyan-500);
       }
     }
   }
