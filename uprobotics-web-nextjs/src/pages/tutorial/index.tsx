@@ -1,21 +1,19 @@
 import React from 'react'
 import Head from 'next/head'
-
+import { Row, Col, Container, Card } from 'react-bootstrap'
 import { SubscribeButton } from '../../components/SubscribeButton'
-import { Container, Hero } from '../../styles/pages/Home'
+// import { Container, Hero } from '../../styles/pages/Home'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Tutorial() {
   return (
     <>
       <Head>
-        <title>Create</title>
+        <title>Tutoriais</title>
       </Head>
 
-      <Container>
-        <Hero>
-          <h1>Tutorial</h1>
-          <SubscribeButton />
-        </Hero>
+       <Container>
+        <h1>Tutoriais</h1>
       </Container>
     </>
   )

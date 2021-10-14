@@ -9,7 +9,7 @@ export function Header() {
     <HeaderContainer>
       <HeaderContent>
         <Link href="/">
-          <a><img src="../../images/logo.svg" alt="upRobotics" /></a>
+          <a><img src="../../images/logo-white.svg" alt="upRobotics" /></a>
         </Link>
         <nav>
           <Link href="/">

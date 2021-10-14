@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 5rem;
-  border-bottom: 1px solid var(--gray-800);
+  border-bottom: 1px solid var(--white--100);
+  background-color: var(--blue--600);
 `
 export const HeaderContent = styled.div`
   max-width: 1120px;
   height: 5rem;
   margin: 0 auto;
   padding: 0 2rem;
-
   display: flex;
   align-items: center;
 
@@ -23,7 +23,7 @@ export const HeaderContent = styled.div`
       padding: 0 0.5rem;
       height: 5rem;
       line-height: 5rem;
-      color: var(--gray-300);
+      color: var(--white);
       transition: color 0.2s;
 
       & + a {
