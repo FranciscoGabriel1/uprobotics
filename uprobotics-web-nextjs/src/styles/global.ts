@@ -12,6 +12,7 @@ export default createGlobalStyle`
 
     --gray-100: #e1e1e6;
     --gray-300: #a8a8b3;
+    --gray-700: #292841;
     --gray-800: #29292e;
     --gray-850:#1f2729;
     --gray-900: #121214;
@@ -20,6 +21,14 @@ export default createGlobalStyle`
     --yellow-500: #eba417;
 
     --blue: blue;
+    --blue--300: 
+    --blue--400: #3DB2FF;
+    --blue--500: #404EED;
+    --blue--600: #2962FF;
+
+    --white-100: #FCFCFC;
+
+
 
 }
 
@@ -42,8 +51,8 @@ export default createGlobalStyle`
 
 
 body{
-    background-color: var(--gray-900);
-    color: var(--white);
+    background-color: var(--white-100);
+    color: var(--gray-700);
      
 }
 
