@@ -53,7 +53,7 @@ export default class MyDocument extends Document {
 
           <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
 
-          <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"></script>
+          <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" ></script>
 
           <script>var Alert = ReactBootstrap.Alert;</script>
         </Head>
