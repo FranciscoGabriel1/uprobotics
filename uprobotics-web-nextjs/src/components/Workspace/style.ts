@@ -6,7 +6,7 @@ export const StyleMain = styled.section`
 `;
 export const GridStyled = styled.div`
     padding-top: 3em;
-    width: 95%; 
+    width: 99%; 
     margin-left: auto;
     margin-right: auto; 
     padding-bottom: 3em;

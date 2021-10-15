@@ -52,7 +52,7 @@ export default createGlobalStyle`
 
 
 body{
-    background-color: var(--blue--300);
+    background-color: var(--white-100);
     color: var(--gray-700);
      
 }
