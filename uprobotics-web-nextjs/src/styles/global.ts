@@ -21,12 +21,13 @@ export default createGlobalStyle`
     --yellow-500: #eba417;
 
     --blue: blue;
-    --blue--300: 
+    --blue--300: #e5f0ff;
     --blue--400: #3DB2FF;
     --blue--500: #404EED;
     --blue--600: #2962FF;
 
     --white-100: #FCFCFC;
+    
 
 
 
