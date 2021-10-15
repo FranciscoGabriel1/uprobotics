@@ -1,13 +1,13 @@
-import { Row, Col} from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
+
 import { WorkstationStyle, OutputCode, GridStyled } from './style'
 
 const Workspace = () => {
   return (
     <>
-      <main>
+      {/* <main>
         <section>
-
-        <GridStyled>
+          <GridStyled>
             <Row>
               <Col xl={8}>
                 <WorkstationStyle id="blocklyDiv" />
@@ -17,9 +17,13 @@ const Workspace = () => {
                 <OutputCode id="codigogerado" />
               </Col>
             </Row>
-        </GridStyled> 
+          </GridStyled>
         </section>
-      </main>
+      </main> */}
+
+<Container><div dangerouslySetInnerHTML={{ __html: "<iframe src='https://workstation-ecru.vercel.app/' style='margin:0; padding:0; width:100%; height:800px;' />"}} /></Container>
+
+
     </>
   )
 }
