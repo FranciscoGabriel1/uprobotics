@@ -4,6 +4,10 @@ export const StyleMain = styled.section`
     background-color: #000000;
     text-align: center;
 `;
+export const Iframe = styled.div`
+    overflow-y: hidden;
+    width: 100%;
+`;
 export const GridStyled = styled.div`
     padding-top: 3em;
     width: 99%; 
