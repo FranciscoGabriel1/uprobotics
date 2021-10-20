@@ -25,7 +25,7 @@ export default function Tutorial() {
         <h1>Guia de atividades</h1>
 
         <p>
-          O UpRobotics você pode realizar atividades com robótica desplugada,
+          No UpRobotics você pode realizar atividades com robótica desplugada,
           isto é, sem um robô real, para isso existem simuladores, <br />
           aqui no Up utilizamos o Webots para desplugada e Arduíno caso você
           tenha um robô. Vamos ver alguns exemplos de como trabalhar no
