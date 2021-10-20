@@ -1,26 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
-import { useState } from 'react'
-import { Row, Col, Container, Card, Button } from 'react-bootstrap'
-import { SubscribeButton } from '../../components/SubscribeButton'
-import { Introduction } from './style'
-import Modal from 'react-bootstrap/Modal'
+import { Row, Col, Container } from 'react-bootstrap'
+import { Introduction } from '../../layout'
 import CardUp from '../../components/Card'
 
 export default function Tutorial() {
-  const [show, setShow] = useState(false);
   return (
     <>
       <Head>
         <title>Tutoriais</title>
       </Head>
-      {/* <iframe
-        src="https://www.youtube.com/embed/E7wJTI-1dvQ"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-        title="video"
-      /> */}
       <Introduction>
         <h1>Guia de atividades</h1>
 
