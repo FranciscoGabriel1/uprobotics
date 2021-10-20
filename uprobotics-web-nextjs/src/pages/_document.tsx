@@ -9,7 +9,6 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
-
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
@@ -49,59 +48,17 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
           <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
 
           <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
 
-          <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" ></script>
-
+          <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"></script>
 
           <script>var Alert = ReactBootstrap.Alert;</script>
 
-
-
-
-
-
-
-
-
-
-
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-    <script src="blockly/blockly_compressed.js"></script>
-    <script src="blockly/blocks_compressed.js"></script>
-    <script src="blockly/javascript_compressed.js"></script>
-    <script src="blockly/msg/js/en.js"></script>
-    <script src="blockly/blocos_up.js"></script>
-    <script src="blockly/ui_bloco.js"></script>
-    <script src="blockly/code_bloco.js"></script>
-    <script src="blockly/interface_geral.js"></script>
-    <script src="blockly/codegen_geral.js"></script>
-    <script src="blockly/interface_teclas.js"></script>
-    <script src="blockly/code_teclas.js"></script>
-    <script src="custom_category_es6.js"></script>
-    <script src="toolbox_label_es6.js"></script>
-    <script src="blockly/wo.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </Head>
         <body>
           <Main />
