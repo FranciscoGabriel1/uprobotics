@@ -28,10 +28,12 @@ export default function Tutorial() {
             <CardUp
               colorSpan="#00979C"
               span={'file-icons:arduino'}
-              src={'https://wallpaperaccess.com/full/1291994.jpg'}
+              src={
+                'https://i.pinimg.com/originals/72/3d/50/723d50fea8d338d18391cf022ba9b2a2.gif'
+              }
               title={'Braço Robótico meArm '}
               text={
-                'O MeArm é um kit de braço robótico pequeno e barato projetado por Ben Gray da Phenoptix. Utiliza Servo Motores e acrílico cortado a laser. Para movimentá-lo, você manipulará 4 servomotores que controlarão a base, a altura, a direção e a garra. Esses movimentos podem ser feitos utilizando 2 joysticks, mas no UpRobotics você poderá programá-lo para que o robô possa fazer movimentos automáticos.'
+                'O MeArm é um kit de braço robótico pequeno e barato que utiliza Servo Motores e acrílico cortado a laser. Para movimentá-lo, você manipulará 4 servomotores que controlarão a base, a altura, a direção e a garra. Esses movimentos podem ser feitos utilizando 2 joysticks, mas no UpRobotics você poderá programá-lo para que o robô possa fazer movimentos automáticos para um Arduino Uno.'
               }
             />
           </Col>
@@ -39,10 +41,12 @@ export default function Tutorial() {
             <CardUp
               colorSpan="#DB001A"
               span={'clarity:bug-line'}
-              src={'https://wallpaperaccess.com/full/1291994.jpg'}
+              src={
+                'https://lh3.googleusercontent.com/proxy/pUiW1_E1jTHKFd19jbXbmzWP2cb3FpmEvgxs4RJwbtp5074VJh2gvIiODPOuZYEJSyhziGfxdmMxgoS1XA'
+              }
               title={'Kuka Youbot '}
               text={
-                'O youBot é um braço robótico móvel desenvolvido pela KUKA. Seu braço possui cinco graus de liberdade e uma pinça linear. Sua base possui quatro rodas Mecanum permitindo o movimento omnidirecional. Essas rodas são modeladas de forma eficiente usando fricção assimétrica.'
+                'O youBot é um braço robótico móvel desenvolvido pela KUKA. Seu braço possui cinco graus de liberdade e uma pinça linear. Sua base possui quatro rodas Mecanum permitindo o movimento omnidirecional. Essas rodas são modeladas de forma eficiente usando fricção assimétrica. No UpRobotics possibilita que você programe seus movimentos automáticos para o Webots.'
               }
             />
           </Col>
@@ -50,9 +54,11 @@ export default function Tutorial() {
             <CardUp
               colorSpan="#DB001A"
               span={'clarity:bug-line'}
-              src={'https://wallpaperaccess.com/full/1291994.jpg'}
-              title={'Kuka Youbot '}
-              text={'texto'}
+              src={'https://revistaunick.com.br/wp-content/uploads/2020/09/nasa-capa.jpeg'}
+              title={'NASA Sojourner'}
+              text={
+                'Sojourner é o rover robótico Pathfinder da NASA que pousou em 1997 na região de Ares Vallis e explorou Marte por cerca de três meses, ele foi feito para circular em solo marciano, que fez parte da missão Mars Pathfinder em 1997. Este foi o primeiro veículo a transitar em Marte. O principal objectivo deste veículo foi o de determinar, através de aparelhos de medição, a composição de algumas rochas pretendidas pelos cientistas e do solo marciano.'
+              }
             />
           </Col>
         </Row>
