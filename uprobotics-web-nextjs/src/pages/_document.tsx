@@ -47,6 +47,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
             rel="stylesheet"
           />
+          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
