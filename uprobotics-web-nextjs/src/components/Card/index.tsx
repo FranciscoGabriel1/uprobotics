@@ -13,15 +13,20 @@ const CardUp = ({
   return (
     <StyleCard>
       <Card
-          style={{
+        style={{
           width: '100%',
           borderRadius: '30px',
           marginTop: '1em',
-          marginBottom: '2em'
+          marginBottom: '2em',
+          height: '500px',
         }}
       >
         <Card.Img
-          style={{ width: '100%', borderRadius: '30px 30px 0px 0px' }}
+          style={{
+            width: '100%',
+            height: '220px',
+            borderRadius: '30px 30px 0px 0px'
+          }}
           variant="top"
           src={src}
         />
@@ -47,10 +52,11 @@ const CardUp = ({
           >
             {text}
           </Card.Text>
-          <Button variant={variant} style={{ marginTop: '1em' }}>
-            {button}
-          </Button>
         </Card.Body>
+        <Button variant={variant} style={{ marginLeft: '25%', marginBottom: '1em', width: '50%'}}>
+          <i className="uil uil-youtube" style={{ marginRight: '10px' }}></i>
+          {button}
+        </Button>
       </Card>
     </StyleCard>
   )

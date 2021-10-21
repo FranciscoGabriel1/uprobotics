@@ -15,9 +15,9 @@ export default function Home() {
 
       <Container>
         <Hero>
-          <span> 👏 Olá, aprendiz</span>
+          <span> <i className="uil uil-robot" style={{fontSize:'40px', 'color': '#F1664E'}}></i> Olá, aprendiz</span>
           <h1>
-            Seja bem-vindo ao <span> Up</span> Robotics.
+            Seja bem-vindo ao <span> Up<i className="uil uil-puzzle-piece" style={{ fontSize:'25px','color': '#2962FF'}}></i></span>Robotics.
           </h1>
           <p>
             Programe e simule um robô com
