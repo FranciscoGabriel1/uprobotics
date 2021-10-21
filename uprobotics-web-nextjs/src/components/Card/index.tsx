@@ -1,5 +1,4 @@
 import { Card, Button } from 'react-bootstrap'
-import { StyleCard } from './style'
 
 const CardUp = ({
   span = 'logos:arduino',
@@ -11,7 +10,6 @@ const CardUp = ({
   variant = 'primary'
 }) => {
   return (
-    <StyleCard>
       <Card
         style={{
           width: '100%',
@@ -58,7 +56,7 @@ const CardUp = ({
           {button}
         </Button>
       </Card>
-    </StyleCard>
+  
   )
 }
 
