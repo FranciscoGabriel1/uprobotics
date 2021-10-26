@@ -42,7 +42,7 @@ export default function Tutorial() {
               colorSpan="#DB001A"
               span={'clarity:bug-line'}
               src={
-                'https://lh3.googleusercontent.com/proxy/pUiW1_E1jTHKFd19jbXbmzWP2cb3FpmEvgxs4RJwbtp5074VJh2gvIiODPOuZYEJSyhziGfxdmMxgoS1XA'
+                'https://static.turbosquid.com/Preview/001158/728/ZN/kuka-youbot-3D-model_600.jpg'
               }
               title={'Kuka Youbot '}
               text={
