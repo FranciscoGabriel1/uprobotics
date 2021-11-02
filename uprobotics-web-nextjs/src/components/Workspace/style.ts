@@ -7,6 +7,7 @@ export const StyleMain = styled.section`
 export const Iframe = styled.div`
     overflow-y: hidden;
     width: 100%;
+    margin-top: 1em;
 `;
 export const GridStyled = styled.div`
     padding-top: 3em;

@@ -1,45 +1,51 @@
 import styled from 'styled-components'
 
-export const Container = styled.main`
+export const Main = styled.main`
   max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    height: calc(100vh - 5rem);
-    
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-  
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    max-width: 460px;
+    max-height: 460px;
+    width: auto;
+    height: auto;
+  }
 `
 export const Hero = styled.section`
- max-width: 600px;
+  max-width: 600px;
 
->span{
+  > span {
     font-size: 1.5rem;
     font-weight: bold;
-}
-h1{
+  }
+  h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
     font-weight: 900;
     margin-top: 2.5;
 
-    span{
-        color:var(--cyan-500);
+    span {
+      color: var(--cyan-500);
     }
-}
-p{
+  }
+  p {
     font-size: 1.5rem;
-    line-height:2.25rem;
-    margin-top:1.5rem;
+    line-height: 2.25rem;
+    margin-top: 1.5rem;
 
-    span{
-        color: var(--cyan-500);
-        font-weight: bold;
+    span {
+      color: var(--cyan-500);
+      font-weight: bold;
     }
-}
+  }
 
-button{
+  button {
     margin-top: 2.5rem;
-}
-`;
+  }
+`
