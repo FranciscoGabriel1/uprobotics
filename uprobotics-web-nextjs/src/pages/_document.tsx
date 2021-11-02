@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="/robot.svg" type="image/png" />
           <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
           <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
