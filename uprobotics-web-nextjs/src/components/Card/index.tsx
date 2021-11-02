@@ -16,13 +16,13 @@ const CardUp = ({
           borderRadius: '30px',
           marginTop: '1em',
           marginBottom: '2em',
-          height: '500px',
+          height: '580px',
         }}
       >
         <Card.Img
           style={{
             width: '100%',
-            height: '220px',
+            height: '290px',
             borderRadius: '30px 30px 0px 0px'
           }}
           variant="top"

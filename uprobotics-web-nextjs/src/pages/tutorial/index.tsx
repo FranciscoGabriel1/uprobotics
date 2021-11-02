@@ -50,7 +50,7 @@ export default function Tutorial() {
               }
             />
           </Col>
-          <Col xl={4}>
+          {/* <Col xl={4}>
             <CardUp
               colorSpan="#DB001A"
               span={'clarity:bug-line'}
@@ -58,6 +58,19 @@ export default function Tutorial() {
               title={'NASA Sojourner'}
               text={
                 'Sojourner é o rover robótico Pathfinder da NASA que pousou em 1997 na região de Ares Vallis e explorou Marte por cerca de três meses, ele foi feito para circular em solo marciano, que fez parte da missão Mars Pathfinder em 1997. Este foi o primeiro veículo a transitar em Marte. O principal objectivo deste veículo foi o de determinar, através de aparelhos de medição, a composição de algumas rochas pretendidas pelos cientistas e do solo marciano.'
+              }
+            />
+          </Col> */}
+          <Col xl={4}>
+            <CardUp
+              colorSpan="#DB001A"
+              span={'clarity:bug-line'}
+              src={
+                'https://www.robot-advance.com/EN/ori-thymio-ii-educational-open-source-robot-1194.png'
+              }
+              title={'Thymio II'}
+              text={
+                'Thymio II é um robô educacional acessível. Ele oferece três características principais: um grande número de sensores e atuadores, uma interatividade educativa baseada em luz e toque, um ambiente de programação com programação gráfica e de texto.'
               }
             />
           </Col>
