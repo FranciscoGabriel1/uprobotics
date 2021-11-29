@@ -50,16 +50,12 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
           <link rel="shortcut icon" href="/robot.svg" type="image/png" />
           <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-
           <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
-
           <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
-
           <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"></script>
-
           <script>var Alert = ReactBootstrap.Alert;</script>
-
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'></link>
         </Head>
         <body>
           <Main />

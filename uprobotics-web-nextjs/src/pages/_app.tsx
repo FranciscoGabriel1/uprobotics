@@ -2,6 +2,7 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { Header } from '../components/Header';
+import Footer from '../components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -14,6 +15,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Header/>
       <Component {...pageProps} />
       <GlobalStyle />
+      <Footer/>
     </ThemeProvider>
   )
 }
