@@ -1,5 +1,6 @@
 import { CustomFooter } from '../../layout'
 import { Col, Row, Container } from 'react-bootstrap'
+import { Player } from '@lottiefiles/react-lottie-player'
 const Footer = () => {
   return (
     <>
@@ -15,7 +16,8 @@ const Footer = () => {
                   data-width="30"
                   data-height="40"
                 ></span>
-                <span className="city"> Manaus-AM, BRASIL</span> <i class=""></i>
+                <span className="city"> Manaus-AM, BRASIL</span>{' '}
+                <i class=""></i>
               </div>
               <div class="social-media">
                 <a href="" class="sm-link">
@@ -80,26 +82,17 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://cyberbotics.com/"
-                    target="_blank"
-                  >
+                  <a href="https://cyberbotics.com/" target="_blank">
                     Webots
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://robotbenchmark.net/"
-                    target="_blank"
-                  >
+                  <a href="https://robotbenchmark.net/" target="_blank">
                     Robotbenchmark
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.tinkercad.com/"
-                    target="_blank"
-                  >
+                  <a href="https://www.tinkercad.com/" target="_blank">
                     TinkerCAD
                   </a>
                 </li>
@@ -110,10 +103,18 @@ const Footer = () => {
         <Container>
           <div className="divider"></div>
           <Row>
-            <Col md={{ span: 3, offset: 0 }}>
-              {' '}
-              <img src="../../images/logo-white.svg" alt="upRobotics" />
+            <Col md={6}>
+              <a href="#top">
+                {' '}
+                <Player
+                  autoplay
+                  loop
+                  src="https://assets8.lottiefiles.com/packages/lf20_hjnzpe2w.json"
+                  style={{ height: '25%', width: '25%', marginLeft: '0px' }}
+                ></Player>
+              </a>
             </Col>
+            <Col> &copy; Copyright 2022 | UpRobotics</Col>
           </Row>
         </Container>
       </CustomFooter>

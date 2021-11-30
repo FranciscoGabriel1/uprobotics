@@ -1,5 +1,4 @@
-import { SignInButtom } from '../SignInButton'
-import { HeaderContainer, HeaderContent } from './style'
+import { HeaderContainer } from './style'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Nav, Navbar, Container } from 'react-bootstrap'
@@ -35,7 +34,7 @@ export function Header() {
             </Nav>
              <Nav>
            
-              <Nav.Link eventKey={2} href="https://developers.google.com/blockly " target="_blank">
+              <Nav.Link eventKey={2} href="#" target="_blank">
               <a><img src="https://i.ibb.co/XsVQHbF/logo-built-with-knockout.png" width="20%"  alt="googleBlockly_logo" /></a>
               </Nav.Link>
             </Nav> 

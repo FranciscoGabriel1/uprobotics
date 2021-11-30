@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-  max-width: 1120px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 2rem;
   height: calc(100vh - 5rem);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +39,7 @@ export const Hero = styled.section`
     margin-top: 1.5rem;
 
     span {
-      color: var(--cyan-500);
+      color:var(--cyan-500);
       font-weight: bold;
     }
   }

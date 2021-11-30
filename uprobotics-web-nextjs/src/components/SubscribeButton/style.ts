@@ -5,15 +5,13 @@ export const SubscribeButtonCustom = styled.button`
   height: 4rem;
   border: 0;
   border-radius: 2rem;
-  background: var(--cyan-500);
-  color: var(--gray-900);
+  background: #2962FF;
+  color: var(--white);
   font-size: 1.25rem;
   font-weight: bold;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: filter 0.2s;
 
   &:hover {
