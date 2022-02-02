@@ -50,17 +50,7 @@ export default function Tutorial() {
               }
             />
           </Col>
-          {/* <Col xl={4}>
-            <CardUp
-              colorSpan="#DB001A"
-              span={'clarity:bug-line'}
-              src={'https://revistaunick.com.br/wp-content/uploads/2020/09/nasa-capa.jpeg'}
-              title={'NASA Sojourner'}
-              text={
-                'Sojourner é o rover robótico Pathfinder da NASA que pousou em 1997 na região de Ares Vallis e explorou Marte por cerca de três meses, ele foi feito para circular em solo marciano, que fez parte da missão Mars Pathfinder em 1997. Este foi o primeiro veículo a transitar em Marte. O principal objectivo deste veículo foi o de determinar, através de aparelhos de medição, a composição de algumas rochas pretendidas pelos cientistas e do solo marciano.'
-              }
-            />
-          </Col> */}
+        
           <Col xl={4}>
             <CardUp
               colorSpan="#DB001A"
@@ -74,6 +64,49 @@ export default function Tutorial() {
               }
             />
           </Col>
+          
+          <Col xl={4}>
+            <CardUp
+              colorSpan="#DB001A"
+              span={'clarity:bug-line'}
+              src={
+                'https://static.generation-robots.com/12044-large_default/robot-mobile-pioneer-3-dx.jpg'
+              }
+              title={'Pioner 3DX'}
+              text={
+                'Veículo terrestre não tripulado (VTNT) da empresa Adept MobileRobots o NERO possui 3 exemplares de dimensão 52x38x21,5cm. São equipados com sonares e enconders, possibilitando, por exemplo, o mapeamento de um ambiente desconhecido.'
+              }
+            />
+          </Col>
+
+          <Col xl={4}>
+            <CardUp
+              colorSpan="#DB001A"
+              span={'clarity:bug-line'}
+              src={
+                'https://robotbenchmark.net/images/robots/LincolnMKZ.png'
+              }
+              title={'Lincoln MKZ'}
+              text={
+                'Programe um carro autônomo Lincoln MKZ para dirigir o mais rápido possível em uma rodovia lotada.'
+              }
+            />
+          </Col>
+          <Col xl={4}>
+            <CardUp
+              colorSpan="#DB001A"
+              span={'clarity:bug-line'}
+              src={
+                'https://assets.rbl.ms/25591840/origin.jpg'
+              }
+              title={'Spot'}
+              text={
+                'O robô "Spot", anteriormente chamado de "SpotMini", é um robô semelhante a um cão de quatro patas desenvolvido pela Boston Dynamics . O robô ágil tem 83 centímetros de altura e foi projetado para uma variedade de tarefas de busca, inspeção e entrega. Ele pode subir escadas e atravessar terrenos acidentados com facilidade sem precedentes, mas é pequeno o suficiente para ser usado em ambientes internos. '
+              }
+            />
+          </Col>
+
+
         </Row>
       </Container>
     </>
