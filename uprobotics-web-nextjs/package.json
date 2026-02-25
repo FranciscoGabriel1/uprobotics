@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "next start"
+  },
+  "engines": {
+    "node": "24.x"
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.4.1",
