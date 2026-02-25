@@ -105,16 +105,10 @@ const Footer = () => {
           <Row>
             <Col md={6}>
               <a href="#top">
-                {' '}
-                <Player
-                  autoplay
-                  loop
-                  src="https://assets8.lottiefiles.com/packages/lf20_hjnzpe2w.json"
-                  style={{ height: '25%', width: '25%', marginLeft: '0px' }}
-                ></Player>
+                ⬆
               </a>
             </Col>
-            <Col> &copy; Copyright 2022 | UpRobotics</Col>
+            <Col> &copy; Copyright 2026 | UpRobotics</Col>
           </Row>
         </Container>
       </CustomFooter>
