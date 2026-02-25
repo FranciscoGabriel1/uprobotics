@@ -1,6 +1,5 @@
 import { CustomFooter } from '../../layout'
 import { Col, Row, Container } from 'react-bootstrap'
-import { Player } from '@lottiefiles/react-lottie-player'
 const Footer = () => {
   return (
     <>

@@ -1,10 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
-import { Player } from '@lottiefiles/react-lottie-player'
+import dynamic from 'next/dynamic'
 import { SubscribeButton } from '../components/SubscribeButton'
 import styles from './home.module.scss'
 import { Main, Hero } from '../styles/pages/Home'
 import { Col, Container, Row } from 'react-bootstrap'
+
+const Player = dynamic(
+  () =>
+    import('@lottiefiles/react-lottie-player').then(
+      (module) => module.Player
+    ),
+  { ssr: false }
+)
 
 // Card de informação simples
 function InfoCard() {
