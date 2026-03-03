@@ -1,10 +1,10 @@
+import React, { useState } from 'react'
 import Loading from '../Loading'
 
 import { Iframe } from './style'
-import { useState } from 'react'
 
-const Workspace = () => {
-  const [isLoading, setIsLoading] = useState(false)
+const Workspace = (): JSX.Element => {
+  const [isLoading] = useState(false)
   return (
     <>
       {/* <Loading/> */}

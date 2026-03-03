@@ -53,7 +53,6 @@ export default class MyDocument extends Document {
           <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
           <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
           <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"></script>
-          <script>var Alert = ReactBootstrap.Alert;</script>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'></link>
         </Head>

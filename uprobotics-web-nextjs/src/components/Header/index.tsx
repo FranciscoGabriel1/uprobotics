@@ -1,10 +1,11 @@
+import React from 'react'
 import { HeaderContainer } from './style'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 
-export function Header() {
-  const router = useRouter()
+export function Header(): JSX.Element {
+  // const router = useRouter()
   return (
     <HeaderContainer>
       <Navbar collapseOnSelect className="navcolor" expand="lg" variant="dark">
@@ -32,12 +33,17 @@ export function Header() {
                 <Nav.Link href="/about">Sobre</Nav.Link>
               </Link>
             </Nav>
-             <Nav>
-           
+            <Nav>
               <Nav.Link eventKey={2} href="#" target="_blank">
-              <a><img src="https://i.ibb.co/XsVQHbF/logo-built-with-knockout.png" width="20%"  alt="googleBlockly_logo" /></a>
+                <a>
+                  <img
+                    src="https://i.ibb.co/XsVQHbF/logo-built-with-knockout.png"
+                    width="20%"
+                    alt="googleBlockly_logo"
+                  />
+                </a>
               </Nav.Link>
-            </Nav> 
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
