@@ -46,7 +46,7 @@ export const TabStyle = styled(Introduction)`
 
   img {
     margin-left: 2em;
-    width: ${props => (props.width ? width : '8%')};
+    width: ${props => (props.width ? props.width : '8%')};
   }
 `
 

@@ -1,9 +1,8 @@
-import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { FiX } from 'react-icons/fi'
 import { SignInButton } from './style'
 
-export function SignInButtom(): JSX.Element {
+export function SignInButtom() {
   const isUserLoggerIn = true
 
   return isUserLoggerIn ? (

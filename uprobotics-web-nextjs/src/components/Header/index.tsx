@@ -1,47 +1,34 @@
-import React from 'react'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import { HeaderContainer } from './style'
-import Link from 'next/link'
-// import { useRouter } from 'next/router'
-import { Nav, Navbar, Container } from 'react-bootstrap'
 
-export function Header(): JSX.Element {
-  // const router = useRouter()
+export function Header() {
   return (
     <HeaderContainer>
       <Navbar collapseOnSelect className="navcolor" expand="lg" variant="dark">
         <Container>
-          <Link href="/">
-            <Navbar.Brand href="/">
-              <a>
-                <img src="../../images/logo-white.svg" alt="upRobotics" />
-              </a>
-            </Navbar.Brand>
-          </Link>
+          <Navbar.Brand href="/">
+            <img src="/images/logo-white.svg" alt="upRobotics" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Link href="/">
-                <Nav.Link href="/">Home</Nav.Link>
-              </Link>
-              <Link href="/create">
-                <Nav.Link href="/create">Criar</Nav.Link>
-              </Link>
-              <Link href="/tutorial">
-                <Nav.Link href="/tutorial">Tutorial</Nav.Link>
-              </Link>
-              <Link href="/about">
-                <Nav.Link href="/about">Sobre</Nav.Link>
-              </Link>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/create">Criar</Nav.Link>
+              <Nav.Link href="/tutorial">Tutorial</Nav.Link>
+              <Nav.Link href="/about">Sobre</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={2} href="#" target="_blank">
-                <a>
-                  <img
-                    src="https://i.ibb.co/XsVQHbF/logo-built-with-knockout.png"
-                    width="20%"
-                    alt="googleBlockly_logo"
-                  />
-                </a>
+              <Nav.Link
+                eventKey={2}
+                href="https://developers.google.com/blockly"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://i.ibb.co/XsVQHbF/logo-built-with-knockout.png"
+                  width="80"
+                  alt="Blockly"
+                />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

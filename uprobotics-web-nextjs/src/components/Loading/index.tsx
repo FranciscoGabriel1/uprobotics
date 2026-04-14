@@ -1,7 +1,9 @@
-import React from 'react'
+import type { ComponentProps } from 'react'
 import ContentLoader from 'react-content-loader'
 
-const Loading = props => (
+type ContentLoaderProps = ComponentProps<typeof ContentLoader>
+
+const Loading = (props: ContentLoaderProps) => (
   <ContentLoader
     width={700}
     height={300}
@@ -26,11 +28,4 @@ const Loading = props => (
   </ContentLoader>
 )
 
-Loading.metadata = {
-  name: 'Sridhar Easwaran',
-  github: 'sridhareaswaran',
-  description: 'Events',
-  filename: 'EventsLoader',
-}
-
-export default Loading;
+export default Loading

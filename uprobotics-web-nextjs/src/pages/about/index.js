@@ -1,9 +1,15 @@
-import React from 'react'
 import Head from 'next/head'
+import { Card, Col, Container, Row, Tab, Tabs } from 'react-bootstrap'
+import { FaYoutube } from 'react-icons/fa'
+import { FiFileText } from 'react-icons/fi'
 import { Introduction, TabStyle } from '../../layout'
-import { Row, Col, Container, Tab, Tabs, Card } from 'react-bootstrap'
 
 export default function About() {
+  const externalLinkProps = {
+    target: '_blank',
+    rel: 'noreferrer'
+  }
+
   return (
     <>
       <Head>
@@ -15,25 +21,24 @@ export default function About() {
         <Container>
           <p>
             O "Up" vem do termo Unplugged Robotics ("Robótica desplugada"), isto
-            é, uma estratégia de ensino de robótica bem sucedida, que não
-            necessita da utilização de um robô físico. O UpRobotics é um artefato
-            de inspiração em pesquisas científicas sobre educação, estratégias e
-            softwares educacionais.
+            é, uma estratégia de ensino de robótica bem-sucedida, que não
+            necessita da utilização de um robô físico. O UpRobotics é um
+            artefato de inspiração em pesquisas científicas sobre educação,
+            estratégias e softwares educacionais.
           </p>
         </Container>
       </Introduction>
 
       <Introduction textAlign={'left'}>
         <Container>
-          {' '}
           <Row>
             <Col>
               <p>
                 Com o UpRobotics, você pode programar seus próprios robôs,
-                testá-los, aprimorar seus algoritmos, sem ter
-                a necessidade de compreender a sintaxe das linguagens de
-                programação textuais como Python e C, por exemplo. A linguagem
-                visual é convertida para linguagens que o robô irá entender.
+                testá-los, aprimorar seus algoritmos, sem ter a necessidade de
+                compreender a sintaxe das linguagens de programação textuais
+                como Python e C, por exemplo. A linguagem visual é convertida
+                para linguagens que o robô irá entender.
               </p>
               <p>
                 UpRobotics foi feito para o exercício do pensamento
@@ -55,9 +60,9 @@ export default function About() {
                 height="100%"
                 src="https://www.youtube.com/embed/SweWjKrH0Oc?list=PLIE3otGP5p5ek1E3bPlphaan8RxRBo61d"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </Col>
           </Row>
@@ -72,42 +77,42 @@ export default function About() {
             >
               <Tab eventKey="project" title="Projeto">
                 <Card body>
-                  O UpRobotics é fruto da dissertação de Mestrado do Aluno{' '}
+                  O UpRobotics é fruto da dissertação de Mestrado do aluno{' '}
                   <a
                     href="http://lattes.cnpq.br/6111525331943224"
-                    target="_blank"
+                    {...externalLinkProps}
                   >
                     Francisco Gabriel Teixeira Marinho
                   </a>
                   , do{' '}
-                  <a href="https://ppgi.ufam.edu.br/" target="_blank">
+                  <a href="https://ppgi.ufam.edu.br/" {...externalLinkProps}>
                     Programa de Pós-Graduação em Informática (PPGi)
                   </a>{' '}
                   no Instituto de Computação (iComp) na Universidade Federal do
-                  Amazonas (UFAM), sobre orientação do professor{' '}
+                  Amazonas (UFAM), sob orientação do professor{' '}
                   <a
                     href="http://lattes.cnpq.br/1132672107627968"
-                    target="_blank"
+                    {...externalLinkProps}
                   >
                     Dr. Raimundo da Silva Barreto
                   </a>
-                  . Esse projeto recebeu apoio financeiro da CAPES (Coordenação
-                  de Aperfeiçoamento de Pessoal de Nível Superior).
+                  . Esse projeto recebeu apoio financeiro da CAPES
+                  (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior).
                   <Row>
                     <Col>
-                      <a href="https://www.gov.br/capes/pt-br" target="_blank">
+                      <a href="https://www.gov.br/capes/pt-br" {...externalLinkProps}>
                         <img
                           src="https://i.ibb.co/Rz9qdZ1/capes.png"
                           alt="capes"
                         ></img>
                       </a>
-                      <a href="https://ufam.edu.br/" target="_blank">
+                      <a href="https://ufam.edu.br/" {...externalLinkProps}>
                         <img
                           src="https://i.ibb.co/cvcV3Sn/ufam.png"
                           alt="ufam"
                         ></img>
                       </a>
-                      <a href="https://icomp.ufam.edu.br/" target="_blank">
+                      <a href="https://icomp.ufam.edu.br/" {...externalLinkProps}>
                         <img
                           src="https://i.ibb.co/HhcwVbp/icomp.png"
                           alt="icomp"
@@ -128,21 +133,25 @@ export default function About() {
                       <a
                         href="https://sol.sbc.org.br/index.php/sbesc_estendido/article/view/13101"
                         style={{ color: '#0D85FE' }}
-                        target="_blank"
+                        {...externalLinkProps}
                       >
-                        <i class="uil uil-newspaper"></i>aqui
+                        <FiFileText
+                          aria-hidden="true"
+                          style={{ marginRight: '0.25rem' }}
+                        />
+                        aqui
                       </a>
                     </li>
                     <li>
-                      <b>Qualificação 2020 </b> intitulada "UpRobotics: Robótica
-                      Educacional Utilizando Linguagem Visual Baseada em Blocos"
+                      <b>Qualificação 2020 </b> intitulada "UpRobotics:
+                      Robótica Educacional Utilizando Linguagem Visual Baseada
+                      em Blocos"
                     </li>
                   </ul>
                 </Card>
               </Tab>
               <Tab eventKey="presentation" title="Palestra">
                 <Card body>
-                  {' '}
                   <ul>
                     <li>
                       <b>Minicurso:</b> "Construção de uma Linguagem Visual
@@ -152,11 +161,13 @@ export default function About() {
                       <a
                         href="https://www.youtube.com/playlist?list=PLIE3otGP5p5ek1E3bPlphaan8RxRBo61d"
                         style={{ color: '#FF0000' }}
-                        target="_blank"
+                        {...externalLinkProps}
                       >
-                        {' '}
                         YouTube
-                        <i class="uil uil-youtube"></i>
+                        <FaYoutube
+                          aria-hidden="true"
+                          style={{ marginLeft: '0.25rem' }}
+                        />
                       </a>
                     </li>
                   </ul>
@@ -175,7 +186,7 @@ export default function About() {
                     <Col>
                       <a
                         href="https://developers.google.com/blockly"
-                        target="_blank"
+                        {...externalLinkProps}
                       >
                         Blockly
                       </a>{' '}
@@ -199,16 +210,15 @@ export default function About() {
                     ></img>
 
                     <Col>
-                      {' '}
-                      <a href="https://cyberbotics.com/" target="_blank">
+                      <a href="https://cyberbotics.com/" {...externalLinkProps}>
                         Webots
                       </a>{' '}
                       é um aplicativo de desktop de código aberto e
-                      multiplataforma usado para simular robôs . Ele fornece um
+                      multiplataforma usado para simular robôs. Ele fornece um
                       ambiente de desenvolvimento completo para modelar,
                       programar e simular robôs. Ele foi projetado para um uso
-                      profissional e é amplamente utilizado na indústria ,
-                      educação e pesquisa . Cyberbotics Ltd. mantém Webots como
+                      profissional e é amplamente utilizado na indústria,
+                      educação e pesquisa. Cyberbotics Ltd. mantém Webots como
                       seu produto principal continuamente desde 1998.
                       <hr />
                     </Col>
@@ -223,8 +233,7 @@ export default function About() {
                     ></img>
 
                     <Col>
-                      {' '}
-                      <a href="https://robotbenchmark.net/" target="_blank">
+                      <a href="https://robotbenchmark.net/" {...externalLinkProps}>
                         Robotbenchmark
                       </a>{' '}
                       é uma aplicação online baseada em Webots. Ele oferece uma
@@ -247,11 +256,10 @@ export default function About() {
                     ></img>
 
                     <Col>
-                      {' '}
-                      <a href="https://www.tinkercad.com/" target="_blank">
+                      <a href="https://www.tinkercad.com/" {...externalLinkProps}>
                         TinkerCAD
                       </a>{' '}
-                      é um aplicativo Web gratuito e fácil de usar que fornece a
+                      é um aplicativo web gratuito e fácil de usar que fornece a
                       projetistas e engenheiros a próxima geração de habilidades
                       fundamentais para inovação: projeto 3D, eletrônica e
                       codificação.

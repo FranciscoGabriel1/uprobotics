@@ -1,25 +1,22 @@
-import React, { useState } from 'react'
-import Loading from '../Loading'
-
 import { Iframe } from './style'
 
-const Workspace = (): JSX.Element => {
-  const [isLoading] = useState(false)
+const Workspace = () => {
   return (
-    <>
-      {/* <Loading/> */}
-
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <Iframe
-          dangerouslySetInnerHTML={{
-            __html:
-              "<iframe src='https://workstation-six.vercel.app/' style='margin:0; padding:3; width:100%; height:1250px; overflow-y: hidden;' scrolling='no' />"
-          }}
-        />
-      )}
-    </>
+    <Iframe>
+      <iframe
+        title="UpRobotics Workspace"
+        src="https://workstation-six.vercel.app/"
+        style={{
+          border: 0,
+          margin: 0,
+          width: '100%',
+          height: '1250px',
+          overflowY: 'hidden'
+        }}
+        scrolling="no"
+      />
+    </Iframe>
   )
 }
+
 export default Workspace

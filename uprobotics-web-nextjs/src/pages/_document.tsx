@@ -1,9 +1,8 @@
-import React from 'react'
 import Document, {
-  DocumentInitialProps,
   DocumentContext,
-  Html,
+  DocumentInitialProps,
   Head,
+  Html,
   Main,
   NextScript
 } from 'next/document'
@@ -19,7 +18,7 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />)
         })
 
       const initialProps = await Document.getInitialProps(ctx)
@@ -37,24 +36,21 @@ export default class MyDocument extends Document {
     }
   }
 
-  render(): JSX.Element {
+  render() {
     return (
-      <Html lang="en">
+      <Html lang="pt-BR">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
             rel="stylesheet"
           />
-          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-          <link rel="shortcut icon" href="/robot.svg" type="image/png" />
-          <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-          <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
-          <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
-          <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'></link>
+          <link rel="icon" href="/robot.svg" />
         </Head>
         <body>
           <Main />

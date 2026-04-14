@@ -1,9 +1,9 @@
-const withImages = require('next-images')
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  compiler: {
+    styledComponents: true
+  }
+}
 
-module.exports = withImages({
-  esModule: true,
-})
-
-// next.config.js
-const withCSS = require('@zeit/next-css')
-module.exports = withCSS()
+module.exports = nextConfig
