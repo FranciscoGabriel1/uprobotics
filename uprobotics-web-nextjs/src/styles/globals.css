@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Surface tokens — mudam com dark mode via classe .dark no <html> */
+:root {
+  --surface: #ffffff;
+  --surface-raised: #f8f9fa;
+  --border: #e1e4e8;
+}
+
+.dark {
+  --surface: #161b22;
+  --surface-raised: #1c2128;
+  --border: #30363d;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gray-50 dark:bg-[#0a0e1a] text-gray-900 dark:text-[#E6EDF3] antialiased;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}

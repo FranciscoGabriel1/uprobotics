@@ -1,104 +1,92 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import { Col, Container, Row } from 'react-bootstrap'
-import { FaRobot } from 'react-icons/fa'
-import { FiArrowUpRight, FiInfo } from 'react-icons/fi'
-import { SubscribeButton } from '../components/SubscribeButton'
-import { Hero, Main } from '../styles/pages/Home'
+import Link from 'next/link'
+import { Bot, ArrowUpRight, Info, ArrowRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 const Player = dynamic(
-  () =>
-    import('@lottiefiles/react-lottie-player').then(
-      (module) => module.Player
-    ),
+  () => import('@lottiefiles/react-lottie-player').then((m) => m.Player),
   { ssr: false }
 )
 
-function InfoCard() {
+function InfoBanner() {
+  const t = useTranslations('home')
   return (
-    <div
-      style={{
-        background: '#e3f7f3',
-        border: '1px solid #0096aa',
-        borderRadius: 8,
-        padding: '12px 18px',
-        marginBottom: 24,
-        maxWidth: 480,
-        boxShadow: '0 2px 8px #0001',
-        color: '#222',
-        fontSize: 15,
-        display: 'flex',
-        alignItems: 'center',
-        gap: 10
-      }}
-    >
-      <FiInfo aria-hidden="true" style={{ fontSize: 22, color: '#50E3C2' }} />
-      <span>
-        Estamos atualizando o site com novas funcionalidades e ajustando algumas coisas.
-        <br />
-        Em breve, teremos novas atualizações.
-        <br />
-        <i>Data dessa publicação: fevereiro de 2026</i>
-        <br />
-        <b>Previsão de atualização do site: junho de 2026</b>
-      </span>
+    <div className="flex items-start gap-3 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/60 rounded-xl p-4 max-w-lg">
+      <Info size={18} className="text-primary mt-0.5 shrink-0" />
+      <div className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p>{t('info_banner')}</p>
+        <p className="text-gray-500 dark:text-gray-500 italic mt-1">{t('info_published')}</p>
+        <p className="font-semibold text-primary mt-0.5">{t('info_forecast')}</p>
+      </div>
     </div>
   )
 }
 
 export default function Home() {
+  const t = useTranslations('home')
+
   return (
     <>
       <Head>
         <title>Home | UpRobotics for Robotic Education</title>
+        <meta
+          name="description"
+          content="Programe seus próprios robôs com linguagem visual baseada em blocos. Sem código, sem robô físico — apenas criatividade."
+        />
       </Head>
 
-      <Main>
-        <Container>
-          <Row>
-            <Col xl={7}>
-              <Hero>
-                <span>
-                  <FaRobot
-                    aria-hidden="true"
-                    style={{ fontSize: '40px', color: '#50E3C2' }}
-                  />{' '}
-                  Olá, aprendiz
-                </span>
-                <h1>
-                  Seja bem-vindo ao{' '}
-                  <span>
-                    Up
-                    <FiArrowUpRight
-                      aria-hidden="true"
-                      style={{ fontSize: '25px', color: '#61dafb' }}
-                    />
-                  </span>
-                  Robotics.
-                </h1>
+      <section className="min-h-[calc(100vh-64px)] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 w-full">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
 
-                <p>
-                  Arrastando e montando blocos, crie movimentos automáticos para
-                  seus robôs e simule-os utilizando
-                  <span> Webots, TinkerCAD ou Robotbenchmark</span>
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <InfoCard />
-                </div>
-                <SubscribeButton />
-              </Hero>
-            </Col>
-            <Col xl={5}>
+            {/* Left — texto */}
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-2 text-sm font-semibold text-primary">
+                <Bot size={20} />
+                <span>{t('greeting')}</span>
+              </div>
+
+              <h1 className="font-display text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-gray-900 dark:text-white leading-tight">
+                {t('title_prefix')}{' '}
+                <span className="text-primary inline-flex items-center gap-0.5">
+                  Up<ArrowUpRight size={32} className="inline -mt-1" />
+                </span>
+                Robotics.
+              </h1>
+
+              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
+                {t('description')}{' '}
+                <span className="font-semibold text-gray-800 dark:text-gray-200">
+                  {t('tools')}
+                </span>
+              </p>
+
+              <InfoBanner />
+
+              <div>
+                <Link
+                  href="/create"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  {t('cta')}
+                  <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right — animação */}
+            <div className="flex justify-center">
               <Player
                 autoplay
                 loop
                 src="https://assets10.lottiefiles.com/packages/lf20_4906fv6z.json"
-                style={{ height: '100%', width: '100%' }}
+                style={{ height: '100%', width: '100%', maxWidth: 480 }}
               />
-            </Col>
-          </Row>
-        </Container>
-      </Main>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

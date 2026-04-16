@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "create": "Criar",
+    "new_version": "Nova versão",
+    "tutorial": "Tutorial",
+    "about": "Sobre"
+  },
+  "home": {
+    "greeting": "Olá, aprendiz",
+    "title_prefix": "Seja bem-vindo ao",
+    "description": "Arrastando e montando blocos, crie movimentos automáticos para seus robôs e simule-os utilizando",
+    "tools": "Webots, TinkerCAD ou Robotbenchmark",
+    "cta": "Programar um robô",
+    "info_banner": "Estamos atualizando o site com novas funcionalidades e ajustando algumas coisas. Em breve, teremos novas atualizações.",
+    "info_published": "Publicado em fevereiro de 2026",
+    "info_forecast": "Previsão de atualização: junho de 2026"
+  },
+  "tutorial": {
+    "title": "Guia de atividades",
+    "description": "No UpRobotics você pode realizar atividades com robótica desplugada, isto é, sem um robô real. Para isso existem simuladores — aqui utilizamos o Webots para simulação e Arduino caso você tenha um robô físico.",
+    "see_tutorial": "Ver tutorial"
+  },
+  "about": {
+    "title": "Sobre o UpRobotics",
+    "tab_project": "Projeto",
+    "tab_papers": "Publicações",
+    "tab_talks": "Palestra",
+    "tab_software": "Softwares utilizados"
+  },
+  "footer": {
+    "tagline": "Robótica Desplugada",
+    "location": "Manaus-AM, BRASIL",
+    "copyright": "Copyright 2026 | UpRobotics",
+    "institutions": "Instituições",
+    "sponsorship": "Patrocínio",
+    "tools": "Ferramentas",
+    "back_to_top": "Voltar ao topo"
+  },
+  "theme": {
+    "light": "Ativar modo claro",
+    "dark": "Ativar modo escuro"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "create": "Create",
+    "new_version": "New version",
+    "tutorial": "Tutorial",
+    "about": "About"
+  },
+  "home": {
+    "greeting": "Hello, learner",
+    "title_prefix": "Welcome to",
+    "description": "Drag and drop blocks to create automatic movements for your robots and simulate them using",
+    "tools": "Webots, TinkerCAD or Robotbenchmark",
+    "cta": "Program a robot",
+    "info_banner": "We are updating the site with new features and making some adjustments. New updates coming soon.",
+    "info_published": "Published in February 2026",
+    "info_forecast": "Update forecast: June 2026"
+  },
+  "tutorial": {
+    "title": "Activity guide",
+    "description": "In UpRobotics you can perform unplugged robotics activities — no physical robot required. We use Webots for simulation and Arduino if you have a physical robot.",
+    "see_tutorial": "See tutorial"
+  },
+  "about": {
+    "title": "About UpRobotics",
+    "tab_project": "Project",
+    "tab_papers": "Publications",
+    "tab_talks": "Talk",
+    "tab_software": "Software used"
+  },
+  "footer": {
+    "tagline": "Unplugged Robotics",
+    "location": "Manaus-AM, BRAZIL",
+    "copyright": "Copyright 2026 | UpRobotics",
+    "institutions": "Institutions",
+    "sponsorship": "Sponsorship",
+    "tools": "Tools",
+    "back_to_top": "Back to top"
+  },
+  "theme": {
+    "light": "Enable light mode",
+    "dark": "Enable dark mode"
+  }
+}
